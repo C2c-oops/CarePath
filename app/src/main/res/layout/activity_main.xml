@@ -1,25 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:padding="40dp">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
 
     <TextView
-        android:id="@+id/displayInfo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:text="Info" />
-
-    <Button
-        android:id="@+id/displayButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Logout"
-        android:layout_below="@id/displayInfo"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true" />
+        android:text="You are logged in"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/mainInfo"
+        android:layout_marginStart="10dp" />
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/activityP3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed to P3"/>
+
+        <Button
+            android:id="@+id/activityP4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed to P4"/>
+
+        <Button
+            android:id="@+id/activityP5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed to P5"/>
+
+        <Button
+            android:id="@+id/mainButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_alignParentBottom="true"/>
+
+</LinearLayout>

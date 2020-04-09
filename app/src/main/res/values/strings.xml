@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CarePath</string>
+
+    <string name="tab_text_1">Entrepreneurship</string>
+    <string name="tab_text_2">Higher Studies</string>
+    <string name="tab_text_3">Company Placement</string>
 </resources>
